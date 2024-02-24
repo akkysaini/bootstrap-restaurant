@@ -2,6 +2,26 @@
 
 /* 
 ==========================
+Utilities
+==========================
+*/
+
+:root {
+  /* ------------colors----------- */
+  --primary-color: #a82c48;
+  --secondary-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #ffffff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+  /* ------------typography----------- */
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Quicksand", sans-serif;
+}
+
+/* 
+==========================
 RESET
 ==========================
 */
@@ -31,25 +51,7 @@ ol {
   margin: 0;
   padding: 0;
 }
-/* 
-==========================
-Utilities
-==========================
-*/
 
-:root {
-  /* ------------colors----------- */
-  --primary-color: #a82c48;
-  --secondary-color: #43121d;
-  --third-color: #f98169;
-  --white-color: #ffffff;
-  --text-color: #555;
-  --text-gray: #999;
-  --black-color: #000;
-  /* ------------typography----------- */
-  --primary-font: "Roboto", sans-serif;
-  --secondary-font: "Quicksand", sans-serif;
-}
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -79,104 +81,170 @@ custom scrollbar
 custom css design
 ==========================
 */
-h1{
-    font-size: 4.8rem;
-    font-weight: 900;
-    margin-bottom: 4.8rem;
-    color: var(--secondary-color);
+h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 4.8rem;
+  color: var(--secondary-color);
 }
-h2{
-    font-weight: 700;
-    font-size: 3.8rem;
-    text-transform: capitalize;
-    font-family: var(--secondary-font);
-    color: var(--secondary-color);
-    line-height: 4.8rem;
+h2 {
+  font-weight: 700;
+  font-size: 3.8rem;
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  line-height: 4.8rem;
 }
-h4{
-    color: var(--secondary-color);
-    font-family: var(--secondary-font);
-    text-transform: capitalize;
-    font-size: 1.2rem;
-    font-weight: 800;
-    margin-bottom: .8rem;
+h4 {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
 }
-h5{
-    color: var(--primary-color);
-    text-transform: capitalize;
-    font-family: var(--secondary-font);
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-bottom: .8rem;
+h5 {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
 }
-p{
-    font-size: 1.6rem;
-    color: var(--text-color);
-    font-weight: 400;
-    line-height:2.8rem;
-    letter-spacing: 1px;
+p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 1px;
 }
-.main-btn{
-    display: inline-block;
-    padding: 1rem 3rem;
-    line-height: 2.5rem;
-    background-color: var(--primary-color);
-    border: 0.2rem solid var(--primary-color);
-    color: var(--white-color);
-    font-size: 1.5rem ;
-    font-weight: 600;
-    text-transform: capitalize;
-    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
-    transition: all .4s ease-in-out 0s;
-    -webkit-transition: all .4s ease-in-out 0s;
-    -moz-transition: all .4s ease-in-out 0s;
-    -ms-transition: all .4s ease-in-out 0s;
-    -o-transition: all .4s ease-in-out 0s;
+.main-btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  line-height: 2.5rem;
+  background-color: var(--primary-color);
+  border: 0.2rem solid var(--primary-color);
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
 }
-.main-btn:hover{
-    background-color: transparent;
-    color: var(--primary-color);
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
 }
-.white-btn{
-    padding: 1rem 3rem;
-    line-height: 2.5rem;
-    background-color: var(--white-color);
-    border: .2rem solid var(--white-color);
-    color: var(--text-color);
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: capitalize;
-    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
-    transition: all .4s ease-in-out 0s;
-    -webkit-transition: all .4s ease-in-out 0s;
-    -moz-transition: all .4s ease-in-out 0s;
-    -ms-transition: all .4s ease-in-out 0s;
-    -o-transition: all .4s ease-in-out 0s;
+.white-btn {
+  padding: 1rem 3rem;
+  line-height: 2.5rem;
+  background-color: var(--white-color);
+  border: 0.2rem solid var(--white-color);
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
 }
-.white-btn:hover{
-    background-color: transparent;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+.white-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
-.wrapper{
-    padding-block: 13.2rem;
+.wrapper {
+  padding-block: 13.2rem;
 }
-.text-content{
-    width: 70%;
-    margin: auto;
+.text-content {
+  width: 70%;
+  margin: auto;
 }
 .counter-section h2,
 .testimonial.section h2,
-.book-food-text h2{
-    color: var(--white-color);
+.book-food-text h2 {
+  color: var(--white-color);
 }
 
+/* 
+==========================
+Header Design
+==========================
+*/
+.navigation-wrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item {
+  padding: 0 1rem;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--primary-color) !important;
+  letter-spacing: 1px;
+}
+.navigation-wrap .main-btn {
+  padding: 0.5rem 2.3rem;
+  box-shadow: none;
+  margin-left: 1rem;
+}
+.navigation-wrap.scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white-color);
+  box-shadow: 0 0 2px 28px 0 rgba(0, 0, 0.9);
+  transition: all 0.15s ease-in-out 0s;
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  -moz-transition: all 0.15s ease-in-out 0s;
+  -ms-transition: all 0.15s ease-in-out 0s;
+  -o-transition: all 0.15s ease-in-out 0s;
+}
+
+/* 
+==========================
+Hero Section
+==========================
+*/
+.hero-section {
+  width: 100%;
+  background: url("../images/bg/bg-1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  padding: 5rem;
+}
 /* 
 ==========================
 Media Queries
 ==========================
 */
-
 
 @media screen and (max-width: 1024px) {
 }
