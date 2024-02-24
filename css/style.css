@@ -215,13 +215,13 @@ Header Design
   box-shadow: none;
   margin-left: 1rem;
 }
-.navigation-wrap.scroll-on {
+.navigation-wrap.active {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background: var(--white-color);
-  box-shadow: 0 0 2px 28px 0 rgba(0, 0, 0.9);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 30px;
   transition: all 0.15s ease-in-out 0s;
   -webkit-transition: all 0.15s ease-in-out 0s;
   -moz-transition: all 0.15s ease-in-out 0s;
@@ -240,6 +240,22 @@ Hero Section
   height: 100vh;
   padding: 5rem;
 }
+/* 
+==========================
+Counter section
+==========================
+*/
+.counter-section{
+    background: var(--primary-color);
+    padding: 4rem 0;
+}
+.counter-section p{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+
+
 /* 
 ==========================
 Media Queries
