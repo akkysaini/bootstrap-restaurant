@@ -238,24 +238,41 @@ Hero Section
   width: 100%;
   background: url("../images/bg/bg-1.jpg") no-repeat center center/cover;
   height: 100vh;
-  padding: 5rem;
+  padding: 5rem 0;
 }
 /* 
 ==========================
 Counter section
 ==========================
 */
-.counter-section{
-    background: var(--primary-color);
-    padding: 4rem 0;
+.counter-section {
+  background: var(--primary-color);
+  padding: 4rem 0;
 }
-.counter-section p{
-    color: var(--white-color);
-    text-transform: uppercase;
+.counter-section p {
+  color: var(--white-color);
+  text-transform: uppercase;
 }
 
-
-
+/* 
+==========================
+about section
+==========================
+*/
+.about-section{
+    background: var(--white-color);
+}
+.about-section .card,
+.about-section .card img{
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.about-section .text-sec{
+    padding-left: 3rem;
+}
 /* 
 ==========================
 Media Queries
@@ -264,9 +281,35 @@ Media Queries
 
 @media screen and (max-width: 1024px) {
 }
-@media screen and (max-width: 991) {
+@media screen and (max-width: 991px) {
+  /* custom classes */
+  .text-content {
+    width: 100%;
+  }
+  /* navbar brand */
+  .navigation-wrap .navbar-brand img {
+    height: 6rem;
+  }
+  .navigation-wrap {
+    text-align: center;
+    background-color: var(--white-color);
+  }
+  .navigation-wrap .nav-link {
+    line-height: 1.6rem;
+  }
+  /* Hero Section */
+  .hero-section {
+    padding: 4rem 0;
+  }
 }
-@media screen and (max-width: 767) {
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+  h2{
+    font-size:3rem ;
+    line-height:3.2rem ;
+  }
 }
 @media screen and (max-width: 330) {
 }
