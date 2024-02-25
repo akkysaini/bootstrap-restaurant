@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..900&family=Roboto:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:wght@300..900&display=swap");
 
 /* 
 ==========================
@@ -99,7 +99,7 @@ h4 {
   color: var(--secondary-color);
   font-family: var(--secondary-font);
   text-transform: capitalize;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 0.8rem;
 }
@@ -112,7 +112,7 @@ h5 {
   margin-bottom: 0.8rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--text-color);
   font-weight: 400;
   line-height: 2.8rem;
@@ -259,19 +259,164 @@ Counter section
 about section
 ==========================
 */
-.about-section{
-    background: var(--white-color);
+.about-section {
+  background: var(--white-color);
 }
 .about-section .card,
-.about-section .card img{
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+.about-section .card img {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
-.about-section .text-sec{
-    padding-left: 3rem;
+.about-section .text-sec {
+  padding-left: 3rem;
+}
+.food-type {
+  padding: 5rem 0 0 0;
+}
+.food-type ul li {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  line-height: 3.2rem;
+  position: relative;
+  margin-left: 3rem;
+}
+.food-type ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  left: -3.3rem;
+  position: absolute;
+  color: var(--primary-color);
+  font-size: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+}
+.story-section {
+  width: 100%;
+  height: 45rem;
+  background: url("../images/bg/bg-2.jpg") no-repeat center center/cover;
+  padding: 10rem 0 0 0;
+  text-align: center;
+}
+.story-section h2 {
+  color: var(--primary-color);
+}
+
+/* 
+==========================
+Explore Food Section
+==========================
+*/
+.explore-food .card {
+  border: none;
+  background-color: transparent;
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  -moz-border-radius: 1.4rem;
+  -ms-border-radius: 1.4rem;
+  -o-border-radius: 1.4rem;
+}
+.explore-food .card img {
+  border-radius: 1.4rem;
+  object-fit: cover;
+  -webkit-border-radius: 1.4rem;
+  -moz-border-radius: 1.4rem;
+  -ms-border-radius: 1.4rem;
+  -o-border-radius: 1.4rem;
+}
+.explore-food .card span {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-bottom: 1.6rem;
+  color: var(--primary-color);
+  border-bottom: 1px solid #eee;
+  margin-block-end: 2rem;
+}
+.explore-food .card span del {
+  color: var(--text-color);
+  margin-left: 0.8rem;
+}
+/* 
+==========================
+Testimonial Section
+==========================
+*/
+.testimonial-section {
+  background-color: var(--primary-color);
+}
+.testimonial-section h2 {
+  color: var(--white-color);
+}
+.testimonial-section .carousel-item {
+  margin-top: 4.8rem;
+  padding: 13rem 5rem;
+  background-color: var(--white-color);
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  text-align: center;
+}
+
+.testimonial-section .client-img {
+  max-width: 8rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.testimonial-section .testimonial-text {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 0 11% 1rem;
+}
+#carouselExampleDark .carousel-indicators{
+  bottom: -4rem !important;
+}
+#carouselExampleDark .carousel-indicators button {
+  width: 1.3rem;
+  height: 1.3rem;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1.6rem;
+  opacity: 0.2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#carouselExampleDark .carousel-indicators button.active{
+  opacity: 1;
+}
+
+/* 
+==========================
+footer
+==========================
+*/
+.footer{
+  background: var(--secondary-color);
+}
+.footer .footer-link{
+  font-size: 1.6rem;
+  color: var(--white-color);
+  padding:0 3rem ;
+}
+.footer .footer-link a:hover{
+  color: var(--white-color) !important;
+}
+.footer a i {
+  font-size: 2rem;
+  color: var(--white-color);
+  padding: 0 1.6rem;
 }
 /* 
 ==========================
@@ -301,15 +446,32 @@ Media Queries
   .hero-section {
     padding: 4rem 0;
   }
+.testimonial-section .testimonial-text {
+  padding: 0;
+}
 }
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 3.8rem;
   }
-  h2{
-    font-size:3rem ;
-    line-height:3.2rem ;
+  h2 {
+    font-size: 3rem;
+    line-height: 3.2rem;
   }
+  .story-section {
+    height: auto;
+    padding: 4.5rem 0;
+  }
+.testimonial-section .carousel-item {
+  padding: 13.6rem 5rem;
 }
-@media screen and (max-width: 330) {
+.footer .footer-link,
+.footer a i {
+  padding: 0 1.1rem;
+}
+}
+@media screen and (max-width: 330px) {
+.testimonial-section .carousel-item {
+  padding: 15rem 5rem;
+}
 }
